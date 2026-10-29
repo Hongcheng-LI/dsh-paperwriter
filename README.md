@@ -6,6 +6,14 @@ Skill 的**真源（source of truth）**是 [`Hongcheng-LI/paperwriter`](https:/
 
 ## 安装
 
+### 方式零：npm 包名直装（最简单）
+
+插件已发布到 npm：[dsh-paperwriter](https://www.npmjs.com/package/dsh-paperwriter)。在 DSH 的「添加插件」对话框直接输入包名：
+
+```
+dsh-paperwriter
+```
+
 ### 方式一：dsh-market（推荐）
 
 1. 打开 DSH Web 界面 → **Plugins** 页 → **Discover**（或 Settings 里的索引设置）
