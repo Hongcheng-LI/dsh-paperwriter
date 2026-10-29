@@ -1,0 +1,70 @@
+{
+    "format":  1,
+    "title":  {
+                  "en":  "Hongcheng-LI DSH Plugins",
+                  "zh":  "Hongcheng-LI 的 DSH 插件"
+              },
+    "description":  {
+                        "en":  "DSH plugin bundles published by Hongcheng-LI.",
+                        "zh":  "Hongcheng-LI 发布的 DSH 插件。"
+                    },
+    "metadata":  {
+                     "categories":  {
+                                        "writing":  {
+                                                        "title":  {
+                                                                      "en":  "Writing",
+                                                                      "zh":  "写作"
+                                                                  }
+                                                    }
+                                    },
+                     "labels":  {
+
+                                },
+                     "sortKeys":  {
+
+                                  }
+                 },
+    "plugins":  [
+                    {
+                        "name":  "dsh-paperwriter",
+                        "title":  {
+                                      "en":  "Paperwriter",
+                                      "zh":  "Paperwriter 论文写作"
+                                  },
+                        "description":  {
+                                            "en":  "Journal-adaptive scientific manuscript writing skill for DSH: project scaffolding, section drafting, revision and submission packages.",
+                                            "zh":  "面向期刊论文全流程的 DSH 写作技能：项目初始化、分区初稿、返修与投稿材料。"
+                                        },
+                        "author":  "Hongcheng-LI",
+                        "homepage":  "https://github.com/Hongcheng-LI/dsh-paperwriter",
+                        "repository":  {
+                                           "url":  "https://github.com/Hongcheng-LI/dsh-paperwriter"
+                                       },
+                        "icon":  "https://raw.githubusercontent.com/Hongcheng-LI/dsh-paperwriter/main/icon.svg",
+                        "metadata":  {
+                                         "category":  "writing",
+                                         "keywords":  [
+                                                          "paperwriter",
+                                                          "manuscript",
+                                                          "academic-writing",
+                                                          "journal",
+                                                          "dsh"
+                                                      ]
+                                     },
+                        "versions":  [
+                                         {
+                                             "version":  "0.1.0",
+                                             "publishTimestamp":  1793240123,
+                                             "source":  {
+                                                            "type":  "git",
+                                                            "url":  "https://github.com/Hongcheng-LI/dsh-paperwriter",
+                                                            "commit":  "1d6648a5c1a8b3bc6b92ed447d2706f228763ebb"
+                                                        },
+                                             "engines":  {
+                                                             "dsh":  "^0.2.1-rc.3"
+                                                         }
+                                         }
+                                     ]
+                    }
+                ]
+}
