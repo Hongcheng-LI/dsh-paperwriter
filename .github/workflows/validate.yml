@@ -1,0 +1,35 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Checkout skill source (paperwriter)
+        uses: actions/checkout@v4
+        with:
+          repository: Hongcheng-LI/paperwriter
+          path: paperwriter-src
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check plugin assets are in sync with skill source
+        run: python scripts/sync_dsh.py --from paperwriter-src --check
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Syntax check index.js
+        run: node --check index.js

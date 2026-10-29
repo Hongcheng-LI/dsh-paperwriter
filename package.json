@@ -1,0 +1,42 @@
+{
+  "name": "dsh-paperwriter",
+  "version": "0.1.0",
+  "description": "DSH bundle that ships the paperwriter skill (journal-adaptive scientific manuscript writing) as a DSH skill provider",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Hongcheng-LI",
+  "homepage": "https://github.com/Hongcheng-LI/dsh-paperwriter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hongcheng-LI/dsh-paperwriter.git"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "skill",
+    "paperwriter",
+    "academic-writing",
+    "manuscript"
+  ],
+  "engines": {
+    "dsh": "^0.2.1-rc.3"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "assets/**/*"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
