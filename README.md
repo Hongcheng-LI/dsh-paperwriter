@@ -8,7 +8,15 @@ Skill 的**真源（source of truth）**是 [`Hongcheng-LI/paperwriter`](https:/
 
 ### 方式零：npm 包名直装（最简单）
 
-插件已发布到 npm：[dsh-paperwriter](https://www.npmjs.com/package/dsh-paperwriter)。在 DSH 的「添加插件」对话框直接输入包名：
+插件已发布到 npm：[dsh-paperwriter](https://www.npmjs.com/package/dsh-paperwriter)。
+
+终端一条命令安装（`web` 换成你的 profile 名）：
+
+```bash
+dsh plugin --profile web add dsh-paperwriter
+```
+
+或在 DSH 的「添加插件」对话框直接输入包名：
 
 ```
 dsh-paperwriter
@@ -27,7 +35,13 @@ dsh-paperwriter
 
 ### 方式二：git 直装
 
-在启用了 Creator 模式的 DSH 会话中，用 `plugin_manager` 工具安装（target 填）：
+终端源码安装（无需 npm 包）：
+
+```bash
+dsh plugin --profile web add github:Hongcheng-LI/dsh-paperwriter
+```
+
+或在启用了 Creator 模式的 DSH 会话中，用 `plugin_manager` 工具安装（target 填）：
 
 ```
 git+https://github.com/Hongcheng-LI/dsh-paperwriter.git
